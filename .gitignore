@@ -2,11 +2,10 @@
 *.pyc
 __pycache__/
 db.sqlite3
-.env
-
-# OS files
-.DS_Store
 
 # Virtual environment
 venv/
 env/
+
+# OS files
+.DS_Store
