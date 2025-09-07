@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+ <div class="container-fluid p-0 my-4">
+ <div id="carouselExample" class="carousel slide">
+
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <style>
+  .carousel-item img {
+    height: 550px; /* adjust as needed */
+    object-fit: cover; /* crop without distortion */
+  }
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    padding: 10px 15px;
+    border-radius: 8px;
+    bottom: 20px; /* positions caption at bottom of image */
+        }
+  .carousel-caption h5, 
+  .carousel-caption p {
+    color: #fff; /* white text */
+     margin: 0;
+        }
+
+   .card img {
+    height: 250px; /* set fixed height for all product images */
+    object-fit: cover; /* crop while keeping proportions */
+  }     
+
+</style>
+    <div class="carousel-item active">
+      <img src="/static/shop2.jpg" class="d-block w-100" alt="shop">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Scrap Shop</h5>
+          <p>Find high-quality scrap items at affordable prices.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img7.jpg" class="d-block w-100" alt="warehouse">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Industrial Storage</h5>
+          <p>Large-scale warehouse products available here.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/car13.jpg" class="d-block w-100" alt="Cars">
+      <div class="carousel-caption d-none d-md-block">
+          <h5>Vehicle Scrap</h5>
+          <p>Cars and vehicle parts ready for resale or recycling.</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="container my-4"> 
+<h1 class="my-2 text-center" >Our Range Of Products</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/nike1.jpg" class="d-block w-100" alt="shop">
+    <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div>
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/nike2.jpg" class="d-block w-100" alt="shop">
+    <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+   <img src="/static/nike3.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+   <img src="/static/adidas1.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/adidas2.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/adidas3.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/car2.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/car3.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> 
+  
+  <div class="col"> <div class="card shadow-sm"> 
+    <img src="/static/car4.jpg" class="d-block w-100" alt="shop"> <div class="card-body"> <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> </div> <small class="text-body-secondary">9 mins</small> </div> </div> </div> </div> </div> </div>
+
+{% endblock body %}
