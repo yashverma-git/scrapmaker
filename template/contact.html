@@ -1,7 +1,116 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Contact{% endblock title %}
 
 {% block body %}
+<div class="container-fluid px-0 mb-4">
+    <img src="{% static 'contactpage3.jpg' %}" alt="Contact" style="width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            display: block;">
+</div>
 
+<div class="container mb-5" >
+    <h1 class="text-center mb-4">Contact Us</h1>
+    <p class="text-center text-muted mb-5">Feel free to reach out to us through email or phone.</p>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="contact-form-container p-4 shadow-sm rounded">
+                <form method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+                    <!-- name -->
+                    <div class="form-group mb-4">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name"  placeholder="name" name="name"
+                            style="background-color: #f8f9fa; text-align: center;">
+                    </div>
+ 
+                    <div class="form-group mb-4">
+                        <label for="email" class="form-label fw-semibold">Email address</label>
+                        <input type="text" class="form-control form-control-lg" id="email" placeholder="Enter your email" name="email"
+                            style="background-color: #f8f9fa; text-align: center;">
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="phone" class="form-label fw-semibold">Phone</label>
+                        <input type="text" class="form-control form-control-lg" id="phone" placeholder="Enter your phone" name="phone"
+                            style="background-color: #f8f9fa; text-align: center;">
+                    </div>
+                    
+
+                    <!-- Textarea -->
+                    <div class="form-group mb-4">
+                        <label for="description" class="form-label fw-semibold">Description</label>
+                        <textarea class="form-control" id="description" name="description" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f0f4f8;
+    }
+
+    .contact-form-container {
+        background-color: #aa9e9eff;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .form-label {
+        color: #2d3748;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+        border: 1px solid #d2d6dc;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        transition: all 0.3s;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    }
+
+    .form-control-lg,
+    .form-select-lg {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        background-color: #4a90e2;
+        border-color: #4a90e2;
+        border-radius: 8px;
+        padding: 0.75rem 2rem;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #3a7bc8;
+        border-color: #3a7bc8;
+        transform: translateY(-2px);
+    }
+
+    .form-text {
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #718096;
+    }
+</style>
 {% endblock body %}
