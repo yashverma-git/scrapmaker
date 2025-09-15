@@ -1,6 +1,8 @@
-# home/views.py
 from django.shortcuts import render
 from datetime import datetime
+from django.contrib import messages
+from .models import Contact  # Import at top unless circular import issue
+
 
 # Home page view
 def index(request):
@@ -9,20 +11,20 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+
 # About page view
 def about(request):
     return render(request, 'about.html')
+
 
 # Features page view
 def features(request):
     return render(request, 'features.html')
 
+
 # Contact page view
 def contact(request):
     if request.method == "POST":
-        # Local import to avoid circular import
-        from .models import Contact
-
         # Get form data
         name = request.POST.get('name')
         email = request.POST.get('email')
@@ -39,8 +41,25 @@ def contact(request):
         )
         new_contact.save()
 
-        # Render the same page with a success message
+        # Add a success message
+        messages.success(request, "Your request has been sent!")
+
+        # Render with success context
         return render(request, 'contact.html', {'success': True})
 
     return render(request, 'contact.html')
 
+
+# Buy page view
+def buy(request):
+    return render(request, 'buy.html')
+
+
+# Sell page view
+def sell(request):
+    return render(request, 'sell.html')
+
+
+# Offer page view
+def offer(request):
+    return render(request, 'offer.html')
